@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popups demo page</title>
+</head>
+<body>
+<style>
+    button{
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -moz-user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .btn-success{
+        color: #fff;
+        background-color: #5CB85C;
+        border-color: #4CAE4C;
+    }
+
+    .btn-notice{
+        color: #fff;
+        background-color: #5BC0DE;
+        border-color: #46B8DA;
+    }
+
+    .btn-warning{
+        color: #fff;
+        background-color: #F0AD4E;
+        border-color: #EEA236;
+    }
+
+    .btn-error{
+        color:#fff;
+        background-color: #D9534F;
+        border-color: #D43F3A;
+    }
+</style>
+
+<button class="btn-success" type="button" onclick="PopupMessage('This is success message. <b>Appears on left top</b>', 'success','top left')">
+    Success
+</button>
+
+<button class="btn-notice" type="button" onclick="PopupMessage('This is notice message')">
+    Notice
+</button>
+
+<button class="btn-warning" type="button" onclick="PopupMessage('This is warning message. And appears on right top', 'warning', 'top right')">
+    Warning
+</button>
+
+<button class="btn-error" type="button" onclick="PopupMessage('This is error message.<br> If omething went totally wrong', 'error')">
+    Error
+</button>
+</body>
+<script type="text/javascript" src="../js/lpn.js"></script>
+</html>
